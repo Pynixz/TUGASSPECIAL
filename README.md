@@ -8,103 +8,46 @@ Setelah pengguna selesai menambah atau mengurangkan pesanan, program menampilkan
 Akhirnya, program mencetak total pesanan dan total pembayaran, menyelesaikan interaksi dengan pengguna dan mengakhiri program "FOODSTREET 2077". Dengan demikian, alur program ini mencakup langkah-langkah pemilihan menu, pengelolaan pesanan, dan perhitungan total pembayaran dalam konteks simulasi pemesanan makanan.
 
 
+## URUTAN PENGERJAAN
 
-# Codingannya
-```py
-print("         FOODSTREET 2077         ")
-print("=================================")
+1. **Mulai:**
+   - Program dimulai dengan mencetak judul dan garis pembatas untuk menampilkan nama toko makanan dan suasana.
 
-nama = input("Nama Pelanggan : ")
-tanggal = input("Tanggal Pembelian : ")
-print("==============================")
-print("     ==== MENU ====      ")
-print("1. Sate                              Rp.10000")
-print("2. Ayam Ireng                        Rp.15000")
-print("3. Mie Ayam                          Rp.13500")
-print("4. Bakso                             Rp.12500")
-print("5. Steak Wagyu                       Rp.50000")
-print("     ==== MENU ====      ")
-h=[]
-a=1
+2. **Input Nama dan Tanggal:**
+   - User diminta untuk memasukkan nama pelanggan dan tanggal pembelian.
 
-menu_pesanan = int (input("Masukan Menu Pesanan (Nomer Menu) : "))
-if menu_pesanan == 1:
-    harga = 10000
-elif menu_pesanan == 2:
-    harga = 15000
-elif menu_pesanan == 3:
-    harga = 13500
-elif menu_pesanan == 4:
-    harga = 12500
-elif menu_pesanan == 5:
-    harga = 50000
-else:
-    while True :
-        print("==== Menu Tidak Tersedia Silahkan Memesan Pilihan Menu Lainnya ====")
-        if menu_pesanan == 1 or menu_pesanan == 2 or menu_pesanan == 3 or menu_pesanan == 4 or menu_pesanan == 5:
-            if menu_pesanan == 1:
-                harga = 10000
-            elif menu_pesanan == 2:
-                harga = 15000
-            elif menu_pesanan == 3:
-                harga = 13500
-            elif menu_pesanan == 4:
-                harga = 12500
-            elif menu_pesanan == 5:
-                harga = 50000
-                break
+3. **Tampilkan Menu:**
+   - Daftar menu makanan dan harganya ditampilkan.
 
-jumlah_pembelian = int (input("Masukan Jumlah Pembelian : "))
-for i in range(jumlah_pembelian):
-    h.append(harga)
+4. **Input Pesanan Pertama:**
+   - User diminta untuk memasukkan nomor menu makanan yang ingin dipesan.
 
-while True:
-    jawab = input("Apakah ada yang ingin ditambah/dikurangi ? tambah/kurang/tidak : ")
-    if jawab == 'tambah':
-        tambah = int(input("Masukan Menu Pesanan (Nomer Menu): "))
-        if tambah == 1:
-            harga = 10000
-        elif tambah == 2:
-            harga = 15000
-        elif tambah == 3:
-            harga = 13500
-        elif tambah == 4:
-            harga = 12500 
-        elif tambah == 5:
-            harga = 50000
-        jumlah_tambahan = int(input("Masukan Jumlah Pembelian : "))
-        for i in range(jumlah_tambahan):
-            h.append(harga)
-        c = jumlah_tambahan + jumlah_pembelian
-        print("Total Pesanan: ",c)
-        bayar =  sum(h)
-        print("Total Pembayaran : Rp.{}".format(bayar))
-        break
-    elif jawab == 'kurang' :
-        kurang = int(input("Berapa Jumlah yang Dikurungkan ? : "))
-        for i in range(kurang):
-            if kurang <= 1:
-                a -= kurang
-                del h[a]
-                bayar = sum(h)
-                break
-            else:
-                kurang -= a
-                del h[kurang]
-                if kurang < 0:
-                    break
-        c = jumlah_pembelian - kurang
-        print ("Total Pememsanan: ",c)
-        bayar = sum(h)
-        print("Total Pembayaran : Rp.{}".format(bayar))
-        break
-    else:
-        bayar = sum(h)
-        c = jumlah_pembelian
-        print("Total Pemesanan : ",c)
-        print("Total Pembayaran : Rp.".format(bayar))
-        break
-```
+5. **Validasi Menu:**
+   - Program memeriksa apakah nomor menu yang dimasukkan valid. Jika tidak, program memberikan pesan kesalahan dan meminta input kembali.
+
+6. **Input Jumlah Pembelian Pertama:**
+   - User diminta untuk memasukkan jumlah makanan yang ingin dipesan.
+
+7. **Tambahkan Harga ke Daftar Harga (List):**
+   - Harga makanan yang dipilih ditambahkan ke dalam daftar harga sejumlah jumlah pembelian.
+
+8. **Pertanyaan Tambahan:**
+   - User ditanya apakah mereka ingin menambah atau mengurangi pesanan mereka.
+
+9. **Tambah Pesanan:**
+   - Jika user ingin menambah pesanan, program meminta input nomor menu dan jumlah tambahan, dan harga tambahan ditambahkan ke daftar harga.
+
+10. **Kurangi Pesanan:**
+    - Jika user ingin mengurangi pesanan, program meminta input jumlah item yang ingin dikurangkan, dan item-item tersebut dihapus dari daftar harga.
+
+11. **Selesai Tambah/Kurang:**
+    - Program menampilkan total pesanan dan total pembayaran setelah penambahan atau pengurangan selesai.
+
+12. **Selesai Tanpa Tambahan/Kurang:**
+    - Jika user tidak ingin menambah atau mengurangkan pesanan, program menampilkan total pesanan dan total pembayaran.
+
+13. **Selesai:**
+    - Program mencetak total pesanan dan total pembayaran, menyelesaikan program.
 
 ### LINK YOUTUBE
 ``` https://youtu.be/ddbehRbDE7w ```
