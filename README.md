@@ -10,7 +10,7 @@ Akhirnya, program mencetak total pesanan dan total pembayaran, menyelesaikan int
 
 
 # Codingannya
-``py
+```py
 print("         FOODSTREET 2077         ")
 print("=================================")
 
@@ -103,4 +103,6 @@ while True:
         c = jumlah_pembelian
         print("Total Pemesanan : ",c)
         print("Total Pembayaran : Rp.".format(bayar))
-        break ``
+        break
+```
+
