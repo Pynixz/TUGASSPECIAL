@@ -1,3 +1,12 @@
+| NAMA  :| DHIYAULHAQ AL MAUDUDI |
+| --- | --- |
+| NIM   :| 312310508 |
+| KELAS :| TI.23.A.5 |
+| DOSEN :| Agung Nugroho,S.Kom.,M.Kom |
+| LINK YOUTUBE | ``` https://youtu.be/ddbehRbDE7w ``` |
+
+
+
 ### Project FOOD STREET 2077
 
 Program "FOODSTREET 2077" dimulai dengan mencetak judul dan garis pembatas, menyambut pengguna untuk memulai pengalaman memesan makanan. Selanjutnya, pengguna diminta untuk memasukkan nama pelanggan dan tanggal pembelian sebagai langkah pertama dalam interaksi dengan program.
@@ -43,8 +52,3 @@ Setelah memasukkan informasi awal, program menampilkan menu makanan lengkap deng
 
 13. **Selesai:**
     - Program mencetak total pesanan dan total pembayaran, menyelesaikan program.
-
-
-
-### LINK YOUTUBE
-``` https://youtu.be/ddbehRbDE7w ```
